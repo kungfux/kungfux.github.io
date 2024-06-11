@@ -16,7 +16,7 @@ timezone: Asia/Tbilisi
 
 title: Alexander Fuks # the main title
 
-tagline: "Ctrl, Alt, Diary: Flightpath"  # it will display as the sub-title
+tagline: "Ctrl, Alt, Diary: Flightpath" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A personal professional blog of Alexander Fuks focusing on software development, testing, and devops.

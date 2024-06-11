@@ -15,8 +15,26 @@
     },
     {
       "label": "Watch",
-      "command": "bundle",
+      "command": "JEKYLL_ENV=development",
+      "type": "shell",
       "args": [
+        "bundle",
+        "exec",
+        "jekyll",
+        "s",
+        "--force_polling",
+        "--livereload",
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Watch (production)",
+      "command": "JEKYLL_ENV=production",
+      "type": "shell",
+      "args": [
+        "bundle",
         "exec",
         "jekyll",
         "s",

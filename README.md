@@ -44,9 +44,12 @@ $ JEKYLL_ENV=production bundle exec jekyll s
 ## Customizations
 
 - Wrap text in code blocks
+  - `assets/css/jekyll-theme-chirpy.scss`
 - Adjust styles for schemas and code blocks
+  - `assets/css/jekyll-theme-chirpy.scss`
 - Align lists by center
+  - `assets/css/jekyll-theme-chirpy.scss`
 - Single line post titles
-```
-assets/css/jekyll-theme-chirpy.scss
-```
+  - `assets/css/jekyll-theme-chirpy.scss`
+- Prevent pageview caching
+  - `_includes/pageviews/goatcounter.html`
