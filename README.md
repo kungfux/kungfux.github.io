@@ -41,6 +41,12 @@ $ JEKYLL_ENV=production bundle exec jekyll s
 
 2. Run `bundle`
 
+## Copy assets
+
+```bash
+$ docker cp cover.webp kungfux.github.io:/workspaces/kungfux.github.io/assets/media/2024
+```
+
 ## Customizations
 
 - Wrap text in code blocks
