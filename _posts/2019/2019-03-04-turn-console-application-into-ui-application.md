@@ -5,7 +5,7 @@ date: 2019-03-04 21:44:37 +0300
 last_modified_at: 2019-03-04 21:44:37 +0300
 published: true
 categories: [Projects, Desktop]
-tags: [DotNet, C#, WinForms, MVC]
+tags: [DotNet/C#, WinForms, MVC]
 mermaid: false
 media_subpath: /assets/media/2019/turn-console-application-into-ui-application/
 image: cover.webp

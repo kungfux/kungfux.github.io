@@ -5,13 +5,13 @@ date: 2024-02-23 04:32:16 +0400
 last_modified_at: 2024-02-23 04:32:16 +0400
 published: true
 categories: [Posts, Software Development]
-tags: [ASP.NET, C#, API]
+tags: [DotNet/C#, ASP.NET, API]
 mermaid: true
 media_subpath: /assets/media/2024/streaming-api-and-how-to-test-it/
 image: cover.webp
 ---
 
-## Introduction 
+## Introduction
 There is a well-known and widely used term called REST API. I'm pretty sure you've had to deal with it when developing and testing software products. However, there are other types of APIs, not only by response type, but by the mechanism of keeping the connection open to provide constant chunks of data, or so called stateful API. Let's look at and compare the following two: REST and Streaming APIs.
 
 ## REST API vs Streaming API
@@ -183,14 +183,14 @@ private async Task<string> GetFirstPortionOfContent(
     TimeSpan timeout)
 {
     var cts = new CancellationTokenSource(timeout);
-    await using var contentStream = 
+    await using var contentStream =
         await response.Content.ReadAsStreamAsync(cts.Token);
     const int bufferSize = 2048;
     var buffer = new byte[bufferSize];
     var result = new List<byte>();
 
     var readBytes = 0;
-    while (!cts.IsCancellationRequested 
+    while (!cts.IsCancellationRequested
         && (readBytes = contentStream.Read(buffer)) != 0)
     {
         for (var i = 0; i < readBytes; i++)

@@ -125,8 +125,8 @@ However, there is still some work to be done on the server side to expand search
 
 The application supports a variety of user inputs.
 
-| Entity | Type | Examples |
-|-|-|-|
+| Entity      | Type                | Examples                    |
+| ----------- | ------------------- | --------------------------- |
 | Requirement | Exact match         | `PRJ-FR1`                   |
 | Requirement | Partial match       | `FR1`, `NFR1`               |
 | Requirement | Range               | `PRJ-FR1-10`                |
@@ -150,7 +150,7 @@ The good thing about Tomcat is that it can take care of maintaining and managing
 
 ```xml
 <Context path="/orqs">
-    <Resource 
+    <Resource
         driverClassName="oracle.jdbc.OracleDriver"
         logAbandoned="true"
         maxIdle="8"

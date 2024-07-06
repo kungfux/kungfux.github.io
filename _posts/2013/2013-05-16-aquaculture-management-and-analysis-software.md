@@ -5,7 +5,7 @@ date: 2013-05-16 01:09:23 +0200
 last_modified_at: 2013-05-16 01:09:23 +0200
 published: true
 categories: [Projects, Desktop]
-tags: [DotNet, C#, WinForms, SQLite, InnoSetup, Delphi, Batch Scripting]
+tags: [DotNet/C#, WinForms, SQLite, InnoSetup, Delphi, Batch Scripting]
 mermaid: true
 media_subpath: /assets/media/2013/aquaculture-management-and-analysis-software/
 image: cover.webp
@@ -97,13 +97,13 @@ const
  begin
    Result := true;
    if (not RegKeyExists(HKLM, 'SOFTWARE\Microsoft\NET Framework Setup\NDP\' + DotNetVersion)) then
-   begin 
+   begin
        MsgBox(FmtMessage(CustomMessage('DotNetIsNotInstalled'), [DotNetVersion]), mbError, MB_OK);
 
-     Abort();   
+     Abort();
    end;
 end;
- 
+
 [CustomMessages]
 DotNetIsNotInstalled='Програма Bestfish.NET не може бути встановлена, так як на даному комп''ютері не встановлений Microsoft .NET Framework %1. Вставте інсталяційний CD диск в оптичний привід вашого комп''ютера і встановіть всі необхідні доповнення. Після чого спробуйте знову'.
 ```

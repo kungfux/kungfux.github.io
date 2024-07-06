@@ -5,7 +5,7 @@ date: 2021-09-30 22:16:55 +0200
 last_modified_at: 2021-09-30 22:16:55 +0200
 published: true
 categories: [Projects, Desktop]
-tags: [DotNet, C#, FlaUI, Desktop automation, Performance testing]
+tags: [DotNet/C#, FlaUI, Desktop automation, Performance testing]
 mermaid: false
 media_subpath: /assets/media/2021/measure-application-startup-performance/
 image: cover.webp
@@ -182,30 +182,30 @@ All collected metrics can be saved in any way for later inclusion in the test ex
 ### Workflow
 
 The overall flow of a possible test execution scenario for a given application might be as follows
-* Warm up  
+* Warm up
 Run the test without collecting performance metrics and saving the test results to reduce the effect of the application's cold-start variance. Repeat a few times.
 
-* Run the test without the add-in installed (baseline)  
+* Run the test without the add-in installed (baseline)
 Run the test to evaluate what it takes for the application to start on its own, and then compare it to that.
 
-* Run the test with the add-in installed  
+* Run the test with the add-in installed
 Run the test to collect metrics for the application with the add-in installed.
 
-* Get feedback  
+* Get feedback
 Analyze the results and pass/fail the execution process so that job execution in CI can pass/fail accordingly. Generate a test execution report for attachment.
 
 ## Conclusion
 
 This solution has proven to be stable and provides an accurate test status result. While it serves the purpose of warning when changes are made that affect startup performance, it has some overall drawbacks:
 
-* Failed results must be evaluated manually  
+* Failed results must be evaluated manually
 If for some reason the test took longer to run and produced a failed result, you will need to analyze the overall performance report to see if there were any processes running, such as virus scanning, that affected disk or CPU usage. This process is completely manual and requires some experience. However, we can still run the test again at a later time to double check.
 
-* No degradation details  
+* No degradation details
 If there is a performance degradation, we will not have any useful information about why exactly it happened.
 
-* Requires an interactive environment  
+* Requires an interactive environment
 To perform tests, this solution requires a Windows server running as a CI agent in interactive mode, which requires a bit more computation and additional configuration.
 
-* Unsuitable for all cases  
+* Unsuitable for all cases
 The solution is designed based on analysis of target applications and may not work for other applications. It's completely up to the application implementation, and plug-in initialization can be fully parallel or delayed until the main process is fully loaded, so you won't affect startup performance in any way.
