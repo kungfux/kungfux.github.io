@@ -4,63 +4,37 @@
     "--name",
     "kungfux.github.io"
   ],
-  // "image": "ruby:latest",
   "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {}
   },
-  "onCreateCommand": "bundle install",
-  "postCreateCommand": "echo \"source /usr/share/bash-completion/completions/git\" >> ~/.bashrc",
-  // "postStartCommand": "nohup bash -c 'bundle exec jekyll s -l &'",
+  "onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
   "forwardPorts": [
     4000
   ],
   "customizations": {
     "vscode": {
       "settings": {
-        // Prettier
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
-        "prettier.trailingComma": "none",
-        // Shopify Liquid
-        "files.associations": {
-          "*.html": "liquid"
-        },
-        "[markdown]": {
-          "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-        },
-        // Formatter
-        "[html][liquid]": {
-          "editor.defaultFormatter": "Shopify.theme-check-vscode"
-        },
-        "[shellscript]": {
-          "editor.defaultFormatter": "foxundermoon.shell-format"
-        },
-        // Disable vscode built-in stylelint
-        "css.validate": false,
-        "scss.validate": false,
-        "less.validate": false,
-        // Stylelint extension settings
-        "stylelint.snippet": [
-          "css",
-          "scss"
-        ],
-        "stylelint.validate": [
-          "css",
-          "scss"
-        ]
+        "terminal.integrated.defaultProfile.linux": "zsh"
       },
       "extensions": [
+        // Liquid tags auto-complete
         "killalau.vscode-liquid-snippets",
+        // Liquid syntax highlighting and formatting
         "Shopify.theme-check-vscode",
+        // Shell
+        "timonwong.shellcheck",
+        "mkhl.shfmt",
+        // Common formatter
+        "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
-        "foxundermoon.shell-format",
         "stylelint.vscode-stylelint",
         "yzhang.markdown-all-in-one",
-        "streetsidesoftware.code-spell-checker",
+        // Git
         "mhutchie.git-graph",
-        "pomber.git-file-history",
-        "wayou.vscode-todo-highlight"
+        // CSpell code checker
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   }

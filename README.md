@@ -57,5 +57,3 @@ $ docker cp cover.webp kungfux.github.io:/workspaces/kungfux.github.io/assets/me
   - `assets/css/jekyll-theme-chirpy.scss`
 - Single line post titles
   - `assets/css/jekyll-theme-chirpy.scss`
-- Prevent pageview caching
-  - `_includes/pageviews/goatcounter.html`
