@@ -57,3 +57,5 @@ $ docker cp cover.webp kungfux.github.io:/workspaces/kungfux.github.io/assets/me
   - `assets/css/jekyll-theme-chirpy.scss`
 - Single line post titles
   - `assets/css/jekyll-theme-chirpy.scss`
+- Meta `author` tag
+  - `_includes/head.html`
