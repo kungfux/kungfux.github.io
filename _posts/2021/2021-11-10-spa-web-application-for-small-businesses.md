@@ -131,16 +131,16 @@ contextBridge.exposeInMainWorld('isRunningInsideDesktopApp', {
 ```html
 <mat-nav-list
   *ngIf="
-	!(isHandset | async) && loggedInUser.id && !isRunningInsideDesktopApp
+  !(isHandset | async) && loggedInUser.id && !isRunningInsideDesktopApp
   ">
   <div mat-subheader>Extra</div>
   <a
-	mat-list-item
-	href="https://bac-setup.kungfux-stub.com/Business%20Accounting%20Cloud%20Setup%201.0.0.exe"
-	target="_blank"
-	matTooltip="Download desktop application to make your work even more comfortable.">
-	<mat-icon>laptop</mat-icon>
-	Desktop client
+  mat-list-item
+  href="https://bac-setup.kungfux-stub.com/Business%20Accounting%20Cloud%20Setup%201.0.0.exe"
+  target="_blank"
+  matTooltip="Download desktop application to make your work even more comfortable.">
+  <mat-icon>laptop</mat-icon>
+  Desktop client
   </a>
 </mat-nav-list>
 ```

@@ -42,12 +42,24 @@
     "devcontainer.json"
   ],
   "cSpell.words": [
+    "appsettings",
+    "aspnet",
+    "cover.webp",
     "devcontainer",
     "devcontainers",
+    "endraw",
     "favicons",
     "Fuks",
     "kungfux",
     "Photoshop",
-    "webp"
+    "reduxjs",
+    "signin",
+    "thisunsafe",
+    "typeof",
+    "webp",
+    "wireframes",
+    "WORKDIR",
+    "wwwroot",
+    "YARP"
   ],
 }

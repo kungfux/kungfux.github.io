@@ -56,7 +56,7 @@ The main difference from typical containers is that they are specifically config
 flowchart LR
     subgraph Container
     ides[IDE Server]
-	  os[Container OS]
+    os[Container OS]
     volume[Volume]
     fs[File System]
     end
