@@ -1,0 +1,15 @@
+---
+permalink: /robots.txt
+# The robots rules
+---
+
+User-agent: *
+
+Allow: /
+
+Disallow: /norobots/
+Disallow: /categories/
+Disallow: /tags/
+Disallow: /history/
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
