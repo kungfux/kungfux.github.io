@@ -59,3 +59,5 @@ $ docker cp cover.webp kungfux.github.io:/workspaces/kungfux.github.io/assets/me
   `assets/css/jekyll-theme-chirpy.scss`
 - Update site title tag from `<h1>` to `<p>`
   `_includes/sidebar.html`
+- Add progress bar to back to top
+  `assets/js/progress.js`, `assets/css/jekyll-theme-chirpy.scss`

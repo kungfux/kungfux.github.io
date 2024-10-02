@@ -37,3 +37,18 @@ div.highlighter-rouge {
   display: flex;
   justify-content: center;
 }
+
+// Progress bar
+#progress-circle {
+  margin: -1px -1px;
+  top: -2.75rem;
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+#progress-circle circle {
+  stroke: var(--toc-highlight);
+  stroke-dasharray: 2 * 3.14 * 20;
+  stroke-dashoffset: 2 * 3.14 * 20;
+  transition: stroke-dashoffset 0.2s;
+}
