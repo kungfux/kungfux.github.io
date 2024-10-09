@@ -17,7 +17,7 @@ Over the past few months, I've encountered a recurring situation during code rev
 ## Case study
 Let me share an example so we can go through it together. Imagine a test that needs to verify that some data in the list appears ordered in the UI.
 
-<pre class="align-center">
+<pre class="d-flex justify-content-center">
 🛒Shopping list
   ☑️ Apples
   ☑️ Bread
