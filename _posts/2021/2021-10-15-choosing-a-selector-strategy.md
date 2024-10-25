@@ -15,7 +15,7 @@ image: cover.webp
 What is a selector? In terms of web automation testing, a selector refers to the mechanism or technique used to locate and identify an element on a web page. Common selector types include ID, Name, Class, XPath, CSS, Link text etc.
 
 | Selector type | Example                        |
-|---------------|--------------------------------|
+| ------------- | ------------------------------ |
 | ID            | `#sumbit`                      |
 | Name          | `input[name='submit']`         |
 | CSS           | `.signIn`                      |
@@ -42,6 +42,10 @@ Let me take a step back from the technical details of locators and focus more on
 The selectors I mentioned earlier, which we use to find elements on a page, were designed primarily for development, not testing. However, as testers, we should focus more on how real users perceive and interact with the UI than on the technical details of the implementation. Our locators and tests should be able to catch any changes in the UI that break the expected user flow and experience, not just technical bugs. The goal is to ensure that the UI works as intended for the end user, not to validate the code.
 
 ## Solution
-There are frameworks that support a different approach to writing UI tests. They are built from the ground up for testing and focus more on user interaction, such as the [Testing Library](https://testing-library.com/docs/queries/about/#priority) and [Playwright](https://playwright.dev/docs/locators). They suggest using specific functions like `getByRole()`, `getByText()`, etc. that mimic how real users perceive the elements, reflecting the experience of visual/mouse users as well as those using assistive technology like screen readers. I think this is a great step towards a way that is closer to how software is used by end users, while making selectors resilient to change.
+There are frameworks that support a different approach to writing UI tests. They are built from the ground up for testing and focus more on user interaction, such as the Testing Library and Playwright. They suggest using specific functions like `getByRole()`, `getByText()`, etc. that mimic how real users perceive the elements, reflecting the experience of visual/mouse users as well as those using assistive technology like screen readers. I think this is a great step towards a way that is closer to how software is used by end users, while making selectors resilient to change.
 
 Here is an example of how this could be done using Testing Library query: `getByRole('button', { name: 'Submit' })`.
+
+## References
+- [Testing Library](https://testing-library.com/docs/queries/about/#priority)
+- [Playwright](https://playwright.dev/docs/locators)

@@ -130,15 +130,15 @@ Each browser company maintains its own extension store where extension developer
 - There is good documentation out there for extension developers, which means that companies would love for people to build extensions.
 - Hopefully, I have been able to work around the limitations and imperfections of the test case management web application. While it has been fun, it would be really nice if the management, developers and testers of the original application would think about how their product is being used and make it just a little bit better, I would never have to spend time doing all this. This is a good lesson and reminder for all of us.
 
-## Extras
-You can find this project repository on [GitHub](https://github.com/kungfux/qtest-manager-assistant)
-
-[![Firefox Add-ons](get-addon-firefox.webp)](https://addons.mozilla.org/en-US/firefox/addon/assistant-for-qtest-manager/)
-[![Chrome Web Store](get-addon-chrome.webp)](https://chrome.google.com/webstore/detail/pnbnfgjbennnjlajgpoajfilinkdpiaf)
-
 ## Demo
 ![Feature: Highlight changes](https://github.com/kungfux/qtest-manager-assistant/raw/dev/docs/highlight.gif)
 _Feature: Highlight changes_
 
 ![Feature: Copy link and details](https://github.com/kungfux/qtest-manager-assistant/raw/dev/docs/copy.gif)
 _Feature: Copy link and details_
+
+## References
+- [Source code](https://github.com/kungfux/qtest-manager-assistant)
+
+[![Firefox Add-ons](get-addon-firefox.webp)](https://addons.mozilla.org/en-US/firefox/addon/assistant-for-qtest-manager/)
+[![Chrome Web Store](get-addon-chrome.webp)](https://chrome.google.com/webstore/detail/pnbnfgjbennnjlajgpoajfilinkdpiaf)

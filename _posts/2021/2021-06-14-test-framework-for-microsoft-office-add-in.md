@@ -29,7 +29,7 @@ Build a test framework that can:
 - Support simultaneous work with multiple instances of Office applications
 
 ## Solution
-The test framework is built using [Selenium](https://www.selenium.dev/) for web application part and [FlaUI](https://github.com/FlaUI/FlaUI) for UI automation of Microsoft Office applications. I chose FlaUI because it supports UIA3 automation, which works best for WPF applications.
+The test framework is built using Selenium for web application part and FlaUI for UI automation of Microsoft Office applications. I chose FlaUI because it supports UIA3 automation, which works best for WPF applications.
 
 The solution includes the following projects:
 - `Office`, which is responsible for launching applications and creating documents such as read-only and protected documents.
@@ -255,3 +255,7 @@ public abstract class DocumentBase: IDocument
 
 ## Conclusion
 While the solution worked, it was not without its drawbacks. Due to the nature of desktop automation, it was not possible to run tests in parallel mode on the same machine/session, or to run tests in headless mode. Each CI agent required additional configuration to run these tests. In addition, these tests were quite slow because it takes time to run a process as heavy as an MS Office application. Therefore, we had to keep an eye on the scenarios we were automating to maintain a small test suite. The focus was on other testing solutions, while scenarios that needed to run in the Microsoft Office environment had to be written using this framework.
+
+## References
+- [Selenium](https://www.selenium.dev/)
+- [FlaUI](https://github.com/FlaUI/FlaUI)

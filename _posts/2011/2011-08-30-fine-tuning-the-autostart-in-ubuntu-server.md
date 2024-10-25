@@ -79,7 +79,7 @@ By editing the script and leaving only the minimum necessary, we get a file with
 # Default-Start: 2 3 4 5
 # Default-Stop: 0 1 6
 # Short-Description: Start and stop execution state of VBox virtual machines
-# Description: This script is used to start and stop of  VBox virtual machines 
+# Description: This script is used to start and stop of  VBox virtual machines
 #              using System-V on Ubuntu Server.
 #              This file should be placed in /etc/init.d
 ### END INIT INFO
@@ -111,7 +111,7 @@ case “$1” in
     ;;
   stop)
     perform_save
-    ;;  
+    ;;
   *)
     echo “Usage: /etc/init.d/agent {start|stop}”
     exit 3
@@ -138,18 +138,18 @@ Adding system startup for /etc/init.d/agent ...
 After the reboot, we can verify that the virtual machine startup command was executed. Let's look at the startup report:
 
 ```bash
-kungfux@itworks:~$ cat /var/log/boot.log 
-fsck from util-linux-ng 2.17.2 
-/dev/sda1: clean, 92526/4751360 files, 2565789/18975488 blocks 
- * Starting Jenkins Continuous Integration Server jenkins 
- * Starting No-IP.com dynamic address update noip2 
- * Not starting internet superserver: no services enabled 
- * Starting Postfix Mail Transport Agent postfix 
- * Starting bittorrent daemon transmission-daemon 
- * Starting VirtualBox kernel modules 
- * Starting NTP server ntpd 
- * Starting ftp server proftpd 
- * Starting web server apache2 
+kungfux@itworks:~$ cat /var/log/boot.log
+fsck from util-linux-ng 2.17.2
+/dev/sda1: clean, 92526/4751360 files, 2565789/18975488 blocks
+ * Starting Jenkins Continuous Integration Server jenkins
+ * Starting No-IP.com dynamic address update noip2
+ * Not starting internet superserver: no services enabled
+ * Starting Postfix Mail Transport Agent postfix
+ * Starting bittorrent daemon transmission-daemon
+ * Starting VirtualBox kernel modules
+ * Starting NTP server ntpd
+ * Starting ftp server proftpd
+ * Starting web server apache2
  * Starting Agent VM
 ```
 
@@ -163,8 +163,8 @@ kungfux@itworks:~$ /etc/init.d/agent start
 
 As you can see from this example, the Ubuntu operating system provides many ways to control the start and stop of services and programs. In startup scripts, you can describe dependencies on other services using "Required-Start/Required-Stop" sections, and the script itself can be of any complexity, allowing you to fine-tune any startup configuration.
 
-> This material was written for the "First contest of Russian-language articles for Ubuntu OS 2011" (konkurs.ubuntu.ru) and published on [open-life.org](https://open-life.org/blog/1862.html)
-{: .prompt-tip }
-
 ![Article competition diploma](diploma.webp)
 _Article competition diploma._
+
+> This material was written for the "First contest of Russian-language articles for Ubuntu OS 2011" (konkurs.ubuntu.ru) and published on [open-life.org](https://open-life.org/blog/1862.html)
+{: .prompt-tip }
