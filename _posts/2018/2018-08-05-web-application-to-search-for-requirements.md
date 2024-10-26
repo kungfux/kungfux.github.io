@@ -139,7 +139,7 @@ The application supports a variety of user inputs.
 | Text        | Contains phrase     | `web api`                   |
 | Text        | Contains words list | `api,performance`           |
 | Hierarchy*  |                     | `10.0-1`, `10.0-2.0-1`      |
-{: align="center" }
+{: .m-auto }
 
 Hierarchy is a special notation that establishes the connection between parent/child requirements, so when used, the application should return the list of closest parent/child requirements that are connected.
 

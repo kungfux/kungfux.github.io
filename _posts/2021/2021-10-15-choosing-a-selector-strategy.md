@@ -21,7 +21,7 @@ What is a selector? In terms of web automation testing, a selector refers to the
 | CSS           | `.signIn`                      |
 | XPath         | `//button[@id='submitButton']` |
 | Link text     | `link=Sign In`                 |
-{: align="center" }
+{: .m-auto }
 
 When it comes to deciding which selector to use for a project, there are a few key things that are usually considered to make a "good" selector:
 1. **Unique**: The selector should be able to uniquely identify an element on the page.
