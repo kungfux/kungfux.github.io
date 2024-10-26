@@ -53,11 +53,11 @@ $ docker cp cover.webp kungfux.github.io:/workspaces/kungfux.github.io/assets/me
   `assets/css/jekyll-theme-chirpy.scss`
 - Adjust styles for schemas and code blocks
   `assets/css/jekyll-theme-chirpy.scss`
-- Align lists by center
-  `assets/css/jekyll-theme-chirpy.scss`
 - Single line post titles
   `assets/css/jekyll-theme-chirpy.scss`
 - Update site title tag from `<h1>` to `<p>`
   `_includes/sidebar.html`
 - Add progress bar to back to top
-  `assets/js/progress.js`, `assets/css/jekyll-theme-chirpy.scss`
+  `assets/js/progress.js`, `assets/css/jekyll-theme-chirpy.scss`, `_includes/metadata-hook.html`
+- Trigger PWA update automatically
+  `assets/js/auto-update.js`, `_includes/metadata-hook.html`
