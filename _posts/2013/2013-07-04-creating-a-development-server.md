@@ -5,7 +5,7 @@ date: 2013-07-04 00:18:57 +0200
 last_modified_at: 2013-07-04 00:18:57 +0200
 published: true
 categories: [Projects, System Administration]
-tags: [Linux, Bash, SVN, Munin, Jenkins, Redmine, PHP, MySQL]
+tags: [Linux, Bash, SVN, Munin, Jenkins, Redmine, PHP, MySQL, Apache]
 mermaid: false
 media_subpath: /assets/media/2013/creating-a-development-server/
 image: cover.webp

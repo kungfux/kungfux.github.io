@@ -5,7 +5,7 @@ date: 2024-05-28 02:03:11 +0400
 last_modified_at: 2024-05-28 02:03:11 +0400
 published: true
 categories: [Posts, Software Development]
-tags: [Docker]
+tags: [Docker, VSCode, Rider, Visual Studio]
 mermaid: true
 media_subpath: /assets/media/2024/development-containers/
 image: cover.webp

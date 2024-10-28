@@ -5,7 +5,7 @@ date: 2024-09-13 11:07:20 +0400
 last_modified_at: 2024-09-13 11:07:20 +0400
 published: true
 categories: [Projects, Web]
-tags: [React, Typescript, Vite, MUI, Redux, DotNet/C#, API, Reverse Proxy, YARP]
+tags: [React, Typescript, Vite, Material UI, Redux, HTML, CSS, NodeJS, DotNet, DotNet Core, CSharp, API, Reverse Proxy, YARP]
 mermaid: true
 media_subpath: /assets/media/2024/custom-web-application-for-existing-service/
 image: cover.webp

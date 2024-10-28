@@ -5,7 +5,7 @@ date: 2013-05-16 01:09:23 +0200
 last_modified_at: 2013-05-16 01:09:23 +0200
 published: true
 categories: [Projects, Desktop]
-tags: [DotNet/C#, WinForms, SQLite, InnoSetup, Delphi, Batch Scripting]
+tags: [DotNet, CSharp, WinForms, SQLite, InnoSetup, Delphi, Batch Scripting]
 mermaid: true
 media_subpath: /assets/media/2013/aquaculture-management-and-analysis-software/
 image: cover.webp

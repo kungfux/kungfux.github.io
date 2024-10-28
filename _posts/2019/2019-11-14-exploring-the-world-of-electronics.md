@@ -140,7 +140,7 @@ DioxideSensor::Data DioxideSensor::getConcentration(){
   uart.write(requestGetConcentration, 9);
   memset(response, 0, 9);
   uart.readBytes(response, 9);
-  
+
   Serial.print(F("MH-Z19B response:"));
   for (unsigned char i=0;i<=8;++i){
     Serial.print(F(" "));
@@ -148,7 +148,7 @@ DioxideSensor::Data DioxideSensor::getConcentration(){
     Serial.print(response[i], HEX);
   }
   Serial.println();
-  
+
   if(verifyChecksum()){
     short high = (short)response[2];
     short low = (short)response[3];

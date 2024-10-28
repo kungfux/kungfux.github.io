@@ -5,7 +5,7 @@ date: 2021-09-30 22:16:55 +0200
 last_modified_at: 2021-09-30 22:16:55 +0200
 published: true
 categories: [Projects, Desktop]
-tags: [DotNet/C#, FlaUI, Desktop automation, Performance testing]
+tags: [DotNet, CSharp, FlaUI, Desktop automation, Performance testing, Windows]
 mermaid: false
 media_subpath: /assets/media/2021/measure-application-startup-performance/
 image: cover.webp

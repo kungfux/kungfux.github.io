@@ -5,7 +5,7 @@ date: 2021-11-10 21:16:09 +0300
 last_modified_at: 2021-11-10 21:16:09 +0300
 published: true
 categories: [Projects, Web]
-tags: [Angular, JavaScript, TypeScript, NodeJS, Fastify, SQLite, Electron]
+tags: [Angular, JavaScript, TypeScript, NodeJS, Fastify, SQLite, Electron, Windows]
 mermaid: false
 media_subpath: /assets/media/2021/spa-web-application-for-small-businesses/
 image: cover.webp

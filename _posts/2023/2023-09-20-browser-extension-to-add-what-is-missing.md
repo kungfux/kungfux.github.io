@@ -5,7 +5,7 @@ date: 2023-09-20 23:18:32 +0400
 last_modified_at: 2023-09-20 23:18:32 +0400
 published: true
 categories: [Projects, Web]
-tags: [Javascript, Webpack]
+tags: [Javascript, Webpack, NodeJS, Chrome, Firefox]
 mermaid: true
 media_subpath: /assets/media/2023/browser-extension-to-add-what-is-missing/
 image: cover.webp

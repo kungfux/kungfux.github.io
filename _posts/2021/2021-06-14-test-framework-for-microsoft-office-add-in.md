@@ -5,7 +5,7 @@ date: 2021-06-14 18:01:24 +0300
 last_modified_at: 2021-06-14 18:01:24 +0300
 published: true
 categories: [Projects, Desktop, Web]
-tags: [DotNet/C#, Selenium, FlaUI, Desktop automation, Web automation]
+tags: [DotNet, CSharp, Selenium, FlaUI, Desktop automation, Web automation, Windows]
 mermaid: true
 media_subpath: /assets/media/2021/test-framework-for-microsoft-office-add-in/
 image: cover.webp

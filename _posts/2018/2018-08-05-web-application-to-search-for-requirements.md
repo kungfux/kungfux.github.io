@@ -5,7 +5,7 @@ date: 2018-08-05 23:11:02 +0300
 last_modified_at: 2018-08-05 23:11:02 +0300
 published: true
 categories: [Projects, Web]
-tags: [Java, JSP, JavaScript, Tomcat, Bootstrap, jQuery]
+tags: [Java, JSP, JavaScript, Tomcat, Bootstrap, jQuery, HTML, CSS]
 mermaid: true
 media_subpath: /assets/media/2018/web-application-to-search-for-requirements/
 image: cover.webp

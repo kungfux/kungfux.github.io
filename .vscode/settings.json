@@ -4,7 +4,7 @@
   "editor.formatOnPaste": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-    // Prettier
+  // Prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   // Shopify Liquid
@@ -45,6 +45,7 @@
     "appsettings",
     "aspnet",
     "cover.webp",
+    "cplusplus",
     "devcontainer",
     "devcontainers",
     "endraw",
@@ -52,6 +53,7 @@
     "Fuks",
     "kungfux",
     "Photoshop",
+    "raspberrypi",
     "reduxjs",
     "signin",
     "thisunsafe",
@@ -63,5 +65,5 @@
     "WORKDIR",
     "wwwroot",
     "YARP"
-  ],
+  ]
 }

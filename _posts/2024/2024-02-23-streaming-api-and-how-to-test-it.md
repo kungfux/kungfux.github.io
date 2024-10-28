@@ -5,7 +5,7 @@ date: 2024-02-23 04:32:16 +0400
 last_modified_at: 2024-02-23 04:32:16 +0400
 published: true
 categories: [Posts, Software Development]
-tags: [DotNet/C#, ASP.NET, API]
+tags: [DotNet, DotNet Core, CSharp, ASP.NET, API]
 mermaid: true
 media_subpath: /assets/media/2024/streaming-api-and-how-to-test-it/
 image: cover.webp

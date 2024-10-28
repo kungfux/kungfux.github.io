@@ -5,7 +5,7 @@ date: 2023-08-01 13:31:18 +0400
 last_modified_at: 2023-08-01 13:31:18 +0400
 published: true
 categories: [Projects, Web]
-tags: [DotNet/C#, ASP.NET, CodeceptJS, API, Test automation]
+tags: [DotNet, DotNet Core, CSharp, ASP.NET, CodeceptJS, API, Test automation]
 mermaid: true
 media_subpath: /assets/media/2023/web-api-to-run-tasks-remotely/
 image: cover.webp
