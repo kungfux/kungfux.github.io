@@ -6,6 +6,22 @@ hr.about {
   text-align: center;
 }
 
+a.tool {
+  display: inline-block;
+  padding: 0.5rem;
+  border-bottom: unset !important;
+  transition: transform 0.2s;
+}
+
+a.tool.hovered {
+  transform: scale(1.5);
+  transition: transform 0.2s;
+}
+
+a.tool.disabled {
+  cursor: default;
+}
+
 i.tool-icon::before {
   font-size: 300%;
   opacity: 1;
@@ -14,20 +30,4 @@ i.tool-icon::before {
 i.tool-icon:not(.colored)::before {
   color: #696969;
   opacity: 0.5 !important;
-}
-
-a.tool {
-  display: inline-block;
-  padding: 0.5rem;
-  border-bottom: unset !important;
-  transition: transform 0.2s;
-}
-
-a.tool:hover {
-  transform: scale(1.5);
-  transition: transform 0.2s;
-}
-
-a.tool.disabled {
-  cursor: default;
 }

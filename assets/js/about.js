@@ -121,15 +121,17 @@ document.querySelectorAll('.tool-icon').forEach((ti) => {
       event,
       () => {
         ti.classList.add('colored');
+        ti.parentElement.classList.add('hovered');
       },
       { passive: true }
     )
   );
-  ['mouseleave', 'touchend'].forEach((event) =>
+  ['mouseleave', 'touchend', 'touchcancel'].forEach((event) =>
     ti.addEventListener(
       event,
       () => {
         ti.classList.remove('colored');
+        ti.parentElement.classList.remove('hovered');
       },
       { passive: true }
     )
