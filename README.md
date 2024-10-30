@@ -61,3 +61,5 @@ $ docker cp cover.webp kungfux.github.io:/workspaces/kungfux.github.io/assets/me
   `assets/js/progress.js`, `assets/css/jekyll-theme-chirpy.scss`, `_includes/metadata-hook.html`
 - Trigger PWA update automatically
   `assets/js/auto-update.js`, `_includes/metadata-hook.html`
+- Improve feed interoperability
+  `assets/feed.xml`
