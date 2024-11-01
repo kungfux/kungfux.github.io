@@ -120,7 +120,7 @@ function main() {
 
 This may seem like a lot of work, and it is. However, in this particular case, there was no way to rely on the web application URL or other properties to determine the state of the web application. In fact, due to the early filtering of the mutation type, only a few changes are checked.
 
-In the end, this solution worked well and could be manually installed in the browser. However, it is not a convenient solution for distribution across teams.
+In the end, this solution[^SourceCode] worked well and could be manually installed in the browser. However, it is not a convenient solution for distribution across teams.
 
 ## Distribution
 Each browser company maintains its own extension store where extension developers should submit their extensions and pass some validations and checks to publish extensions to the store. For some stores this is completely free, for others it costs some money. In addition, extensions may require separate preparation for each browser, as well as separate data and image sets to be used for the extension's store page. All this takes time for the first release of an extension. However, once this is done and the extension has passed the review process, which can take a considerable amount of time, end users can finally install the extension in the usual way by navigating to the extension's page in the web browser's store. Another advantage of distributing through the store is that the next time you release a new version, the extension will automatically be updated on users' machines, making the update distribution process flawless.
@@ -137,8 +137,9 @@ _Feature: Highlight changes_
 ![Feature: Copy link and details](https://github.com/kungfux/qtest-manager-assistant/raw/dev/docs/copy.gif)
 _Feature: Copy link and details_
 
-## References
-- [Source code](https://github.com/kungfux/qtest-manager-assistant)
-
+{: .text-center }
 [![Firefox Add-ons](get-addon-firefox.webp)](https://addons.mozilla.org/en-US/firefox/addon/assistant-for-qtest-manager/)
 [![Chrome Web Store](get-addon-chrome.webp)](https://chrome.google.com/webstore/detail/pnbnfgjbennnjlajgpoajfilinkdpiaf)
+
+## References
+[^SourceCode]: [Source code](https://github.com/kungfux/qtest-manager-assistant)

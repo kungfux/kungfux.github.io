@@ -23,8 +23,8 @@ I once had to deal with a Unity mini-game that drew graphics on a screen. The on
 ## Solution
 Stack used:
 - Python
-- PyAutoGUI
-- python-imagesearch
+- PyAutoGUI[^PyAutoGUI]
+- python-imagesearch[^python-imagesearch]
 
 We need to find the screen location of items to interact with. There are some rules were given like game character enjoys only yellow fruits, so user had to click on yellow fruits on screen.
 
@@ -91,5 +91,5 @@ Even though it was a simple game, this approach allowed me to automate repetitiv
 - Assets are sensitive to any visual changes. Light/dark themes, UI updates can break image search. So you may need to prepare assets for both or have strict requirements for the automation execution environment. Hence, it will work poorly with animated elements and may fail due to element visual state changes such as hover, active, etc.
 
 ## References
-- [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
-- [python-imagesearch](https://pypi.org/project/python-imagesearch/)
+[^PyAutoGUI]: [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
+[^python-imagesearch]: [python-imagesearch](https://pypi.org/project/python-imagesearch/)

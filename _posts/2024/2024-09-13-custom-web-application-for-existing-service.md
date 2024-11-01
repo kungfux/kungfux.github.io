@@ -18,7 +18,6 @@ image: cover.webp
 *[Redux]: Redux is a predictable state container for JavaScript apps.
 *[Helm]: Helm is a package manager for Kubernetes.
 
-
 ## Story
 
 Have you ever faced a situation where an application you use every day is missing a feature or workflow that you would like to have? What can a regular user do to get that feature added to the application? Well, it depends on the situation. I can think of contacting the developers and asking for it, hoping that the idea will be warmly accepted and implemented. I can vote for a feature in the case of open source projects, or if the project has a forum for user feedback.

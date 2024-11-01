@@ -23,7 +23,7 @@ We deploy and run applications in Docker containers, which gives us many benefit
 
 The idea is to use the Docker container as the development environment during the development process. In theory, this helps to completely eliminate some of the problems associated with configuring the development environment.
 
-The good news is that development containers are already widely supported by Visual Studio, VS Code, Rider, and others, but with limited support mostly. There are platforms that allow you to spin up development containers remotely, such as GitHub. This all possible due to the Open Development Container Specification.
+The good news is that development containers are already widely supported by Visual Studio[^MicrosoftVisualStudio], VS Code[^MicrosoftVisualStudioCode], Rider[^JetBrainsRider], and others, but with limited support mostly. There are platforms that allow you to spin up development containers remotely, such as GitHub[^IntroductionToDevContainersByGitHub]. This all possible due to the Open Development Container Specification[^DevelopmentContainerSpecification].
 
 ### Configuration
 
@@ -68,7 +68,7 @@ flowchart LR
 
 Devcontainer images are a bit different from typical images. Devcontainer images come with pre-built tools and runtime stack specific to development container image, also they are not designed to be used for hosting applications in production as permissions and OS configuration could be adjusted to make it easier to use. But what makes a huge difference is the Visual Studio Code Server that runs inside the container, which allows you to run formatters and linters, use a predefined list of Visual Studio Code extensions, and even scan the container output and integrate all of this with the IDE running locally. So you are basically using the IDE as a terminal to connect to the remote development environment.
 
-There are a number of ready-made development containers available. You can create a custom one including custom features for devcontainers. Features are self-contained units of installation code and development container configurations that can be installed along with the primary image, allowing you to mix .NET and NodeJS in a single devcontainer configuration, for example, or use them to extend your existing `Dockerfile` definition just for development purposes.
+There are a number of ready-made development containers available[^OfficialMicrosoftImages]. You can create a custom one[^DevContainerTemplatesSelfAuthoringGuide] including custom features[^DevContainerFeaturesSelfAuthoringTemplate] for devcontainers. Features are self-contained units of installation code and development container configurations that can be installed along with the primary image, allowing you to mix .NET and NodeJS in a single devcontainer configuration, for example, or use them to extend your existing `Dockerfile` definition just for development purposes.
 
 ## Benefits
 
@@ -102,11 +102,11 @@ There is no ideal solution. Like any other, it has some drawbacks.
 Would I recommend using it? Well, it depends. There are no good or bad tools, and this one is no exception. I believe it needs more time to discover and reduce common issues related to it's usage, IDE support and can become a great seamless one-click way to spin up development environment. While it looks feature-rich even today, it is necessary to compare all the pros and cons for a particular project to make a proper decision. Nevertheless, I would recommend everyone to give it a try and integrate it into a smaller project to see how easy development environment management can be.
 
 ## References
-- [Microsoft Visual Studio](https://learn.microsoft.com/en-us/visualstudio/containers/?view=vs-2022)
-- [Microsoft Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/containers)
-- [JetBrains Rider](https://www.jetbrains.com/help/rider/Connect_to_DevContainer.html)
-- [Introduction to dev containers by GitHub](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
-- [Development Container Specification](https://containers.dev/implementors/spec/)
-- [Official Microsoft images](https://mcr.microsoft.com/en-us/catalog?search=dev%20container)
-- [Dev Container Templates: Self Authoring Guide](https://github.com/devcontainers/template-starter)
-- [Dev Container Features: Self Authoring Template](https://github.com/devcontainers/feature-starter)
+[^MicrosoftVisualStudio]: [Microsoft Visual Studio](https://learn.microsoft.com/en-us/visualstudio/containers/?view=vs-2022)
+[^MicrosoftVisualStudioCode]: [Microsoft Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/containers)
+[^JetBrainsRider]: [JetBrains Rider](https://www.jetbrains.com/help/rider/Connect_to_DevContainer.html)
+[^IntroductionToDevContainersByGitHub]: [Introduction to dev containers by GitHub](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
+[^DevelopmentContainerSpecification]: [Development Container Specification](https://containers.dev/implementors/spec/)
+[^OfficialMicrosoftImages]: [Official Microsoft images](https://mcr.microsoft.com/en-us/catalog?search=dev%20container)
+[^DevContainerTemplatesSelfAuthoringGuide]: [Dev Container Templates: Self Authoring Guide](https://github.com/devcontainers/template-starter)
+[^DevContainerFeaturesSelfAuthoringTemplate]: [Dev Container Features: Self Authoring Template](https://github.com/devcontainers/feature-starter)

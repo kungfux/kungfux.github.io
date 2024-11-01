@@ -16,7 +16,7 @@ This was my longest project so far, which started somewhere in 2008 and ended in
 
 The very first version I built in 2008 was a desktop application using C# and WinForms with a simple Microsoft Access database. It had a single screen to add income/expenses and calculate the total, average per year, or per selected range. It was easy to build and super usable for my dad.
 
-Later, in 2015, I updated the application to use WPF for modern UI and SQLite database. This version had more features like employee directory, salary management and basic charts. It was also packaged using InnoSetup to create a simple Windows installer. This served him well for many years.
+Later, in 2015, I updated the application[^BusinessAccountingDesktop] to use WPF for modern UI and SQLite database. This version had more features like employee directory, salary management and basic charts. It was also packaged using InnoSetup[^InnoSetup] to create a simple Windows installer. This served him well for many years.
 
 In 2021, he told me that what he wanted most was to be able to access the application from any device, not just his computer.
 
@@ -30,7 +30,7 @@ In 2021, he told me that what he wanted most was to be able to access the applic
 - Preserve functionality currently available in the desktop application
 
 ## Solution
-At first I thought about separate desktop and mobile applications and how to synchronize data between them. However, I decided to simplify things and go with an SPA application that could run in the browser on any device.
+At first I thought about separate desktop and mobile applications and how to synchronize data between them. However, I decided to simplify things and go with an SPA application[^BusinessAccountingCloud] that could run in the browser on any device.
 
 ### Database
 I decided to stick with SQLite as a lightweight solution that was easy to back up and move. The database schema got a bit bigger with additional tables for employee titles, properties, categories, etc. Also, the schema and the application itself were designed to manage multiple businesses in case he ever wanted to track income/expenses for other ventures separately in the future.
@@ -150,5 +150,6 @@ contextBridge.exposeInMainWorld('isRunningInsideDesktopApp', {
 - Even after all these years and multiple versions of the application, my dad said he loved the very first version of the program because it allowed him to enter values with a single click and gave him the big picture for the entire year on the same application screen. It was an interesting thing to think about. However, he enjoyed being able to access his finances from anywhere and on any device.
 
 ## References
-- [Business Accounting Desktop](https://github.com/kungfux/business-accounting-desktop)
-- [Business Accounting Cloud](https://github.com/kungfux/business-accounting-cloud)
+[^BusinessAccountingDesktop]: [Business Accounting Desktop](https://github.com/kungfux/business-accounting-desktop)
+[^BusinessAccountingCloud]: [Business Accounting Cloud](https://github.com/kungfux/business-accounting-cloud)
+[^InnoSetup]: [Inno Setup](https://jrsoftware.org/isinfo.php)

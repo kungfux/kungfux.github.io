@@ -31,7 +31,7 @@ There are solutions for measuring application performance, such as integrated or
 I had to accept the fact that I needed a custom solution. During my research, I found an interesting example of an application that aims to test the startup performance of desktop applications by launching the application and detecting the point at which the application becomes visible and waits for idle input.
 
 ![PassMark AppTimer](app-timer.webp)
-_PassMark AppTimer_
+_PassMark AppTimer[^PassMarkAppTimer]_
 
 This was pretty close to what I was looking for, so I decided this was a good starting point for my idea. However, I had to work around its limitations: it won't work for complex applications and it can't be extended to add additional features.
 
@@ -211,4 +211,4 @@ To perform tests, this solution requires a Windows server running as a CI agent 
 The solution is designed based on analysis of target applications and may not work for other applications. It's completely up to the application implementation, and plug-in initialization can be fully parallel or delayed until the main process is fully loaded, so you won't affect startup performance in any way.
 
 ## References
-- [PassMark AppTimer](https://www.passmark.com/products/apptimer/)
+[^PassMarkAppTimer]: [PassMark AppTimer](https://www.passmark.com/products/apptimer/)
