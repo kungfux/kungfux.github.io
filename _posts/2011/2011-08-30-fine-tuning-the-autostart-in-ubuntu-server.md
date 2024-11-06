@@ -15,7 +15,7 @@ image: cover.webp
 The purpose of this post is to familiarize with the principles of autostart in the Ubuntu operating system using Ubuntu Server 10.04 LTS as an example and to demonstrate the configuration of a virtual machine autostart running under VirtualBox, and the correct termination of the latter in automatic mode when shutting down Ubuntu Server.
 
 > The example below does not apply to customizing the autostart of graphical applications for a specific system user in desktop versions of Ubuntu. To do this, use the "Running Applications" from the Ubuntu main menu
-{: .prompt-info }
+{: .gh-alert.note }
 
 ## What is autostart and how to configure it?
 Autostart is a process of automatically starting of services/applications when the operating system is started. Autostart can also ensure that these services/applications are properly terminated when the system is shut down or rebooted.
@@ -42,7 +42,7 @@ sudo cp /etc/init.d/skeleton /etc/init.d/myscript && vi /etc/init.d/myscript
 ```
 
 > When you create a new script, don't forget to give it execute privileges. To add execution privileges to a script, use the `sudo chmod +x /etc/init.d/myscript` command
-{: .prompt-info }
+{: .gh-alert.tip }
 
 ### How to add a script to the autostart?
 Some sources recommend creating symbolic links manually with the `ln` command, although special utilities exist. Before adding a script, the utility checks it for validity, and the `ln` command will create a link even if there is some error. So, tt is better to use specialized utilities, such as `update-rc.d`, which comes bundled with Ubuntu. It can be used to add a new script to any boot level, remove an existing script, and so on. Here's an example of how to use it:
@@ -167,4 +167,4 @@ As you can see from this example, the Ubuntu operating system provides many ways
 _Article competition diploma._
 
 > This material was written for the "First contest of Russian-language articles for Ubuntu OS 2011" (konkurs.ubuntu.ru) and published on [open-life.org](https://open-life.org/blog/1862.html)
-{: .prompt-tip }
+{: .gh-alert.note }

@@ -46,7 +46,7 @@ Here is a list of the most common commands:
 {: .m-auto }
 
 > `update` is a command alias for `upgrade`, so you can use either of them.
-{: .prompt-tip }
+{: .gh-alert.note }
 
 The good thing about winget is that it requires an installer that supports silent installation mode, so we can avoid clicking the "Next" button in the installer wizard by passing the `--silent` argument. This makes it possible to use winget in scripts or to update all software at once without any disturbance. However, some applications may not support this mode, so you may need to use a GUI to install or update them.
 

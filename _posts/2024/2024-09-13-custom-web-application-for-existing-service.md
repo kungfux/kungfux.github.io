@@ -191,7 +191,7 @@ $ npm run dev
 ```
 
 > If you don't want to install the certificate locally, you can simply type `thisunsafe` right in the Chrome tab to continue loading the application over an untrusted HTTPS connection.
-{: .prompt-info}
+{: .gh-alert.tip }
 
 #### User Interface
 

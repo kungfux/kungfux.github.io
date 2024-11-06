@@ -15,7 +15,7 @@ image: cover.webp
 Software development can be as fun as it is challenging. Despite product development where you can usually launch an application or write tests to see if it works as expected or not, there is another world of software development where software development faces the real world. This juxtaposition brings even more challenges and makes the work more interesting. In this post, I will share some stories from my experience when software development is unusually fun.
 
 > Some of the projects described here are done more for fun than for real usage. I do not recommend taking them seriously. Use certified only software and equipment when your safety and health are at stake.
-{: .prompt-warning }
+{: .gh-alert.important }
 
 ## Dive depth gauge
 Once I decided to try snorkeling and discover the creatures that live in the Black Sea. Since there is no way to discover the underwater world without diving in these specific conditions, I had to train myself to use apnea to dive. I used the smartwatch to navigate underwater to know where the land was without having to surface and look around. The timer on my watch told me how long I could stay at depth, while the heart rate monitor told me how long I should pause while breathing through the snorkel.
