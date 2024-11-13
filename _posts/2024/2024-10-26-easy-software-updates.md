@@ -5,7 +5,7 @@ date: 2024-10-26 04:21:11 +0400
 last_modified_at: 2024-10-26 04:21:11 +0400
 published: true
 categories: [Posts, Software Development]
-tags: [Winget]
+tags: [Winget, Windows]
 mermaid: false
 media_subpath: /assets/media/2024/easy-software-updates/
 image: cover.webp
