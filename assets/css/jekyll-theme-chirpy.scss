@@ -2,7 +2,7 @@
 ---
 
 /* prettier-ignore */
-@import 'main
+@use 'main
 {%- if jekyll.environment == 'production' -%}
   .bundle
 {%- endif -%}
@@ -13,7 +13,7 @@
  */
 
 // Use blue accent color
-%link-hover {
+#access-lastmod a:hover {
   color: #007bff !important;
   border-bottom: 1px solid #007bff;
 }
