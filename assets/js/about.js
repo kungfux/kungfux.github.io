@@ -8,7 +8,9 @@ const tools = [
   { icon: 'javascript' },
   { icon: 'typescript' },
   { icon: 'java' },
+  { icon: 'kotlin', isClickable: false },
   { icon: 'cplusplus', tag: 'c', hint: 'C++' },
+  { icon: 'embeddedc', tag: 'c', hint: 'Embedded C' },
   { icon: 'python' },
   { icon: 'php' },
   // { icon: 'delphi' },
@@ -24,7 +26,6 @@ const tools = [
   { icon: 'sass', isClickable: false },
   { icon: 'bootstrap' },
   { icon: 'fastify' },
-  { icon: 'arduino' },
 
   // Host, deployment and CI/CD
   { icon: 'docker' },
@@ -74,13 +75,17 @@ const tools = [
   { icon: 'cucumber', isClickable: false },
   { icon: 'postman', isClickable: false },
   // { icon: 'jmeter', isClickable: false },
+  { icon: 'vitest', isClickable: false },
 
   // Others
   { icon: 'windows11', tag: 'windows', hint: 'Windows' },
   { icon: 'powershell', isClickable: false },
   { icon: 'linux' },
+  { icon: 'ubuntu' },
   { icon: 'bash' },
   { icon: 'vim', isClickable: false },
+  { icon: 'android', isClickable: false },
+  { icon: 'arduino' },
   { icon: 'raspberrypi', hint: 'Raspberry Pi' },
   { icon: 'chrome' },
   { icon: 'firefox' },
