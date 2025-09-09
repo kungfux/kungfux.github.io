@@ -60,3 +60,5 @@ $ docker cp cover.webp kungfux.github.io:/workspaces/kungfux.github.io/assets/me
   `assets/js/auto-update.js`, `_includes/metadata-hook.html`
 - jekyll-target-blank plugin
   `Gemfile`, `_config.yml`
+- Chat
+  `chat.html`, `chat.md`, `chat.cscc`, `avatar-chat.jpg`, `guest-chat.jpg`, `chat.js`

@@ -1,0 +1,49 @@
+---
+layout: page
+---
+<div class="chat">
+  <div id="chat-content" class="chat-content">
+    <ul id="chat-thread" class="chat-thread">
+      <li class="me">
+        <p>
+          Hey! Feel free to send me a message if you have a question about a blog post, or if you just want to chat! 😀
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <form
+    class="chat-window"
+    onsubmit="event.preventDefault(); sendMessage(event)"
+  >
+    <div class="chat-form-container">
+      <input
+        id="chat-window-input"
+        class="chat-window-message"
+        name="chat-window-message"
+        type="text"
+        autocomplete="off"
+        autofocus
+        placeholder="Type your message here"
+        required
+        pattern="[A-Za-z0-9 ?!.,'&quot;]+"
+      >
+      <button id="chat-window-send-button" type="button" alt="Send" onclick="sendMessage(event)">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.5/dist/purify.min.js"></script>
+<script src="{{ '/assets/js/chat.js' | relative_url }}"></script>
+<script>
+  const chatBotUrl =
+    {%- if jekyll.environment == 'production' -%}
+      "https://chat-bot.redirectme.net/chat"
+    {%- else -%}
+      "https://localhost/chat"
+    {%- endif -%}
+    ;
+</script>
