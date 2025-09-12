@@ -1,83 +1,47 @@
-function sendMessage() {
-  const message = getMessage();
-  if (!message) {
-    return;
-  }
-  lockInput();
-  postMessage('guest', message);
-  addTypingMessage();
-  askChatBot(message)
-    .then((answer) => {
-      removeTypingMessage();
-      postMessage('me', answer);
-      unlockInput();
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      removeTypingMessage();
-      postMessage('me', "Sorry, I can't reply at the moment.");
-      unlockInput();
-    });
-}
+// --------------------
+// Utility Functions
+// --------------------
+const $ = (id) => document.getElementById(id);
 
-function postMessage(who, text) {
-  const chatThread = document.getElementById('chat-thread');
+const getTimestamp = () =>
+  new Date().toLocaleTimeString([], {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
 
-  const replyThread = document.createElement('li');
-  replyThread.classList.add(who);
+const sanitizeMarkdown = (text) => DOMPurify.sanitize(marked.parse(text));
 
-  const replyHtml = marked.parse(text);
-  replyThread.innerHTML = DOMPurify.sanitize(replyHtml);
+const scrollToBottom = () => {
+  const chat = $('chat-content');
+  if (chat) chat.scrollTop = chat.scrollHeight;
+};
 
-  chatThread.appendChild(replyThread);
+// --------------------
+// Chat UI Management
+// --------------------
+function postMessage(sender, text) {
+  const chat = $('chat-thread');
+  if (!chat) return;
+
+  const messageContainer = document.createElement('li');
+  messageContainer.classList.add(sender);
+
+  const timestamp = document.createElement('span');
+  timestamp.classList.add('timestamp');
+  timestamp.textContent = getTimestamp();
+
+  messageContainer.appendChild(timestamp);
+  messageContainer.innerHTML += sanitizeMarkdown(text);
+
+  chat.appendChild(messageContainer);
   scrollToBottom();
 }
 
-async function askChatBot(question) {
-  const response = await fetch(chatBotUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ question, k: 3 }),
-  });
-
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
-  }
-
-  const data = await response.json();
-  const answer = data.answer;
-  const cleanAnswer = answer
-    .replace(/<think\s*>[\s\S]*?<\/think\s*>/gi, '')
-    .replace(/<think\s*\/>/gi, '')
-    .trim();
-  return cleanAnswer;
-}
-
-function getMessage() {
-  const input = document.getElementById('chat-window-input');
-  const message = input.value;
-  return message;
-}
-
-function lockInput() {
-  const input = document.getElementById('chat-window-input');
-  input.disabled = true;
-  const sendButton = document.getElementById('chat-window-send-button');
-  sendButton.disabled = true;
-  input.value = '';
-}
-
-function unlockInput() {
-  const input = document.getElementById('chat-window-input');
-  input.disabled = false;
-  const sendButton = document.getElementById('chat-window-send-button');
-  sendButton.disabled = false;
-  input.focus();
-}
-
 function addTypingMessage() {
+  const chat = $('chat-thread');
+  if (!chat) return;
+
   const typingMessage = document.createElement('li');
   typingMessage.id = 'typing-message';
   typingMessage.classList.add('me', 'typing');
@@ -87,17 +51,87 @@ function addTypingMessage() {
     <span class="dot"></span>
   `;
 
-  const chatThread = document.getElementById('chat-thread');
-  chatThread.appendChild(typingMessage);
-
+  chat.appendChild(typingMessage);
   scrollToBottom();
 }
 
 function removeTypingMessage() {
-  document.getElementById('typing-message')?.remove();
+  $('typing-message')?.remove();
 }
 
-function scrollToBottom() {
-  let chat = document.getElementById('chat-content');
-  chat.scrollTop = chat.scrollHeight;
+function lockInput() {
+  const input = $('chat-form-input');
+  const sendButton = $('chat-form-send-button');
+  if (!input || !sendButton) return;
+
+  input.disabled = true;
+  sendButton.disabled = true;
+  input.value = '';
 }
+
+function unlockInput() {
+  const input = $('chat-form-input');
+  const sendButton = $('chat-form-send-button');
+  if (!input || !sendButton) return;
+
+  input.disabled = false;
+  sendButton.disabled = false;
+  input.focus();
+}
+
+// --------------------
+// Bot Communication
+// --------------------
+async function askChatBot(question) {
+  const response = await fetch(chatBotUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question, k: 3 }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  const { answer } = await response.json();
+  return answer
+    .replace(/<think\s*>[\s\S]*?<\/think\s*>/gi, '')
+    .replace(/<think\s*\/>/gi, '')
+    .trim();
+}
+
+// --------------------
+// Main Interaction
+// --------------------
+async function sendMessage() {
+  const input = $('chat-form-input');
+  const message = input?.value.trim();
+
+  if (!message) return;
+
+  lockInput();
+  postMessage('guest', message);
+  addTypingMessage();
+
+  try {
+    const answer = await askChatBot(message);
+    removeTypingMessage();
+    postMessage('me', answer);
+  } catch (error) {
+    console.error('ChatBot Error:', error);
+    removeTypingMessage();
+    postMessage('me', "Sorry, I can't reply at the moment.");
+  } finally {
+    unlockInput();
+  }
+}
+
+// --------------------
+// Initialization
+// --------------------
+document.addEventListener('DOMContentLoaded', () => {
+  postMessage(
+    'me',
+    'Hello!<br>Feel free to send me a message if you have any questions about blog content, or if you just want to chat.'
+  );
+});

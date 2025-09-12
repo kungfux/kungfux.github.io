@@ -1,0 +1,25 @@
+/*
+ * Post styles
+ */
+
+// Schemas and code blocks styles
+div.highlighter-rouge {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/*
+ * Bootstrap
+ */
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.m-auto {
+  margin: auto;
+}

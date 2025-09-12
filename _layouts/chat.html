@@ -4,23 +4,18 @@ layout: page
 <div class="chat">
   <div id="chat-content" class="chat-content">
     <ul id="chat-thread" class="chat-thread">
-      <li class="me">
-        <p>
-          Hey! Feel free to send me a message if you have a question about a blog post, or if you just want to chat! 😀
-        </p>
-      </li>
     </ul>
   </div>
 
   <form
-    class="chat-window"
+    class="chat-form"
     onsubmit="event.preventDefault(); sendMessage(event)"
   >
     <div class="chat-form-container">
       <input
-        id="chat-window-input"
-        class="chat-window-message"
-        name="chat-window-message"
+        id="chat-form-input"
+        class="chat-form-message"
+        name="chat-form-message"
         type="text"
         autocomplete="off"
         autofocus
@@ -28,7 +23,7 @@ layout: page
         required
         pattern="[A-Za-z0-9 ?!.,'&quot;]+"
       >
-      <button id="chat-window-send-button" type="button" alt="Send" onclick="sendMessage(event)">
+      <button id="chat-form-send-button" type="button" alt="Send" aria-label="send" onclick="sendMessage(event)">
         <i class="fas fa-paper-plane"></i>
       </button>
     </div>
@@ -43,7 +38,7 @@ layout: page
     {%- if jekyll.environment == 'production' -%}
       "https://chat-bot.redirectme.net/chat"
     {%- else -%}
-      "https://localhost/chat"
+      "http://localhost/chat"
     {%- endif -%}
     ;
 </script>
