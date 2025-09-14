@@ -82,11 +82,14 @@ function unlockInput() {
 // --------------------
 // Bot Communication
 // --------------------
+const messageHistory = [];
+const historyLength = 3;
+
 async function askChatBot(question) {
   const response = await fetch(chatBotUrl, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question, k: 3 }),
+    body: JSON.stringify({ question : question, history: messageHistory}),
   });
 
   if (!response.ok) {
@@ -94,6 +97,12 @@ async function askChatBot(question) {
   }
 
   const { answer } = await response.json();
+
+  messageHistory.push(question);
+  if (messageHistory.length > historyLength) {
+    messageHistory.shift();
+  }
+
   return answer
     .replace(/<think\s*>[\s\S]*?<\/think\s*>/gi, '')
     .replace(/<think\s*\/>/gi, '')
@@ -136,6 +145,6 @@ async function sendMessage() {
 document.addEventListener('DOMContentLoaded', () => {
   postMessage(
     'me',
-    'Hello!<br>Feel free to send me a message if you have any questions about blog content, or if you just want to chat.'
+    'Hi! 👋<br>Curious about my blog or me? Ask away anytime! 😉'
   );
 });
