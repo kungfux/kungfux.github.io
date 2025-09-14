@@ -105,8 +105,12 @@ async function askChatBot(question) {
 // --------------------
 async function sendMessage() {
   const input = $('chat-form-input');
-  const message = input?.value.trim();
+  if (!input.checkValidity()) {
+    input.reportValidity();
+    return;
+  }
 
+  const message = input?.value.trim();
   if (!message) return;
 
   lockInput();
