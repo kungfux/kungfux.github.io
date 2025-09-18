@@ -2,7 +2,7 @@
 title: Git cheat sheet
 description: A note on the key Git commands.
 date: 2024-11-13 00:41:16 +0400
-last_modified_at: 2024-11-13 00:41:16 +0400
+last_modified_at: 2025-09-18 19:31:49 +0400
 published: true
 categories: [Posts, Software Development]
 tags: [Git]
@@ -130,6 +130,22 @@ git rebase -i main
 
 # Rebase a branch onto a different branch
 git rebase –onto new-branch-name old-branch-name
+```
+
+### Update user email after committing the wrong one
+```bash
+git config user.email "kungfux@users.noreply.github.com"
+git commit --amend --reset-author --no-edit
+git push
+```
+
+### Update commit date to current system time
+```bash
+# For last commit
+git commit --amend --no-edit --date="$(date)"
+
+# For commits in the branch
+git rebase -i --exec 'git commit --amend --reset-author --no-edit' main
 ```
 
 ## Copy changes
@@ -389,14 +405,6 @@ git push origin --delete branch-name
 ### Remove remote
 ```bash
 git remote remove origin
-```
-
-## Recipes
-### Update user email after committing the wrong one
-```bash
-git config user.email "kungfux@users.noreply.github.com"
-git commit --amend --reset-author --no-edit
-git push
 ```
 
 ### Move git repository to new home
