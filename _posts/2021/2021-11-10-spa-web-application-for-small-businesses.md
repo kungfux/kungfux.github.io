@@ -4,7 +4,7 @@ description: SPA project for small businesses to manage income, expenses and bas
 date: 2021-11-10 21:16:09 +0300
 last_modified_at: 2021-11-10 21:16:09 +0300
 published: true
-categories: [Projects, Web]
+categories: [Projects, Web Projects]
 tags: [Angular, JavaScript, TypeScript, NodeJS, Fastify, SQLite, Electron, Windows]
 mermaid: false
 media_subpath: /assets/media/2021/spa-web-application-for-small-businesses/

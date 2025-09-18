@@ -4,7 +4,7 @@ description: Use YARP Transformations to seamlessly renew sessions.
 date: 2024-09-16 19:58:19 +0400
 last_modified_at: 2024-09-16 19:58:19 +0400
 published: true
-categories: [Projects, Web]
+categories: [Projects, Web Projects]
 tags: [DotNet, DotNet Core, CSharp, YARP, API, Reverse Proxy]
 mermaid: true
 media_subpath: /assets/media/2024/yarp-transformations/

@@ -4,7 +4,7 @@ description: Browser extension project to add missing features to a web applicat
 date: 2023-09-20 23:18:32 +0400
 last_modified_at: 2023-09-20 23:18:32 +0400
 published: true
-categories: [Projects, Web]
+categories: [Projects, Web Projects]
 tags: [Javascript, Webpack, NodeJS, Chrome, Firefox]
 mermaid: true
 media_subpath: /assets/media/2023/browser-extension-to-add-what-is-missing/

@@ -4,7 +4,7 @@ description: Web application project to search for requirements.
 date: 2018-08-05 23:11:02 +0300
 last_modified_at: 2018-08-05 23:11:02 +0300
 published: true
-categories: [Projects, Web]
+categories: [Projects, Web Projects]
 tags: [Java, JSP, JavaScript, Tomcat, Bootstrap, jQuery, HTML, CSS]
 mermaid: true
 media_subpath: /assets/media/2018/web-application-to-search-for-requirements/

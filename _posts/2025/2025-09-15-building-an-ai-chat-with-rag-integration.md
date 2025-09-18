@@ -6,7 +6,7 @@ last_modified_at: 2025-09-15 23:49:17 +0400
 published: true
 categories:
   - Projects
-  - Software Development
+  - Web Projects
 tags:
   - AI
   - LLM

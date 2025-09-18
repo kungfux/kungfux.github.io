@@ -4,7 +4,7 @@ description: Automation project utilizing image search to find elements to inter
 date: 2022-10-18 23:05:59 +0400
 last_modified_at: 2022-10-18 23:05:59 +0400
 published: true
-categories: [Projects, Desktop, Web]
+categories: [Projects, Desktop Projects, Web Projects]
 tags: [Python, Desktop automation, Web automation]
 mermaid: false
 media_subpath: /assets/media/2022/automation-by-image-search/

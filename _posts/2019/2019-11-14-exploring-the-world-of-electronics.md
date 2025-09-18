@@ -4,7 +4,7 @@ description: My journey exploring electronics, microcontrollers and IoT.
 date: 2019-11-14 03:12:39 +0300
 last_modified_at: 2019-11-14 03:12:39 +0300
 published: true
-categories: [Posts, Electronics]
+categories: [Posts, Hardware & Electronics]
 tags: [C++, Arduino, ESP8266, RaspberryPi, MQTT, IoT]
 mermaid: false
 media_subpath: /assets/media/2019/exploring-the-world-of-electronics/

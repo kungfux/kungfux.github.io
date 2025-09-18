@@ -4,7 +4,7 @@ description: Stories when software development is fun but challenging.
 date: 2024-06-23 07:33:12 +0400
 last_modified_at: 2024-06-23 07:33:12 +0400
 published: true
-categories: [Posts, Software Development, Electronics]
+categories: [Posts, Software Development, Hardware & Electronics]
 tags: [ESP8266, Arduino, C++, IoT, MQTT, Monkey C]
 mermaid: false
 media_subpath: /assets/media/2024/dive-into-development/

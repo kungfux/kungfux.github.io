@@ -4,7 +4,7 @@ description: Website and CMS application project for a local commercial company.
 date: 2012-08-12 22:49:02 +0200
 last_modified_at: 2012-08-12 22:49:02 +0200
 published: true
-categories: [Projects, Web, Desktop]
+categories: [Projects, Web Projects, Desktop Projects]
 tags: [DotNet, CSharp, WinForms, PHP, MySQL, HTML, CSS, JavaScript, Windows]
 mermaid: true
 media_subpath: /assets/media/2012/website-for-local-commercial-equipment-production-company/

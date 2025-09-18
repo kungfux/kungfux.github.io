@@ -4,7 +4,7 @@ description: Desktop application project to manage aquaculture production data.
 date: 2013-05-16 01:09:23 +0200
 last_modified_at: 2013-05-16 01:09:23 +0200
 published: true
-categories: [Projects, Desktop]
+categories: [Projects, Desktop Projects]
 tags: [DotNet, CSharp, WinForms, SQLite, InnoSetup, Delphi, Batch Scripting]
 mermaid: true
 media_subpath: /assets/media/2013/aquaculture-management-and-analysis-software/

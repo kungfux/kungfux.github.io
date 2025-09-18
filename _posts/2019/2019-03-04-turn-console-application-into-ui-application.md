@@ -4,7 +4,7 @@ description: Project to add a user interface to the console application.
 date: 2019-03-04 21:44:37 +0300
 last_modified_at: 2019-03-04 21:44:37 +0300
 published: true
-categories: [Projects, Desktop]
+categories: [Projects, Desktop Projects]
 tags: [DotNet, CSharp, WinForms, MVC, Windows]
 mermaid: false
 media_subpath: /assets/media/2019/turn-console-application-into-ui-application/

@@ -4,7 +4,7 @@ description: Test framework project that integrates web and desktop automation.
 date: 2021-06-14 18:01:24 +0300
 last_modified_at: 2021-06-14 18:01:24 +0300
 published: true
-categories: [Projects, Desktop, Web]
+categories: [Projects, Desktop Projects, Web Projects]
 tags: [DotNet, CSharp, Selenium, FlaUI, Desktop automation, Web automation, Windows]
 mermaid: true
 media_subpath: /assets/media/2021/test-framework-for-microsoft-office-add-in/
