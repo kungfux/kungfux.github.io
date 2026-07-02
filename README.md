@@ -5,7 +5,7 @@ Check it out at [kungfux.github.io](https://kungfux.github.io)
 ### Commands
 - Restore
 ```bash
-$ bundle
+$ bundle install
 ```
 
 - Build
@@ -35,7 +35,7 @@ $ JEKYLL_ENV=production bundle exec jekyll s
 + gem "jekyll-theme-chirpy", "= 6.5.5"
 ```
 
-2. Run `bundle`
+2. Run `bundle install`
 
 ### Assets
 - Image format is `.webp`
